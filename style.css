@@ -145,11 +145,10 @@ p{
 
 /*Media Qurie*/
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px){
     .grid{
         display: grid;
         grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
-        
     }
     
     #section-a .content-text{
@@ -157,7 +156,7 @@ p{
         column-gap: 2em;
     }
     
-    #section-a .content-text p{
+    #section-a .context-text p{
         padding-top: 0;
     }
     
@@ -172,12 +171,10 @@ p{
     
     #section-b ul{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
     #section-b li{
         width: 31%;
     }
 }
-
-
