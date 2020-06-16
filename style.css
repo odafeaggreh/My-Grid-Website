@@ -1,11 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*Core Styles*/
 
 body{
     background: #333;
     color: #fff;
-    font-family: calibri;
+    font-family: sans-serif;
     font-size: 1.1em;
-    line-height: 1em;
+    line-height: 2em;
     text-align: center;
     margin: 0;
 }
@@ -33,7 +39,7 @@ p{
     border: 1px solid #666;
     padding: 1em 2em;
     display: inline-block;
-    margin: 5em 0;
+    margin: 5em;
 }
 
 .btn:hover{
@@ -57,7 +63,7 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 450px;
+    height: 700px;
     z-index: -1;
     opacity: 0.4;
 }
@@ -139,13 +145,14 @@ p{
     display: flex;
     justify-content: space-around;
     list-style: none;
-    padding-top: 1em;
+    padding: 1em;
 }
 
 
 /*Media Qurie*/
 
 @media screen and (min-width: 700px){
+   
     .grid{
         display: grid;
         grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
@@ -159,6 +166,7 @@ p{
     #section-a .context-text p{
         padding-top: 0;
     }
+    
     
     .content-wrap,
     #section-b ul{
